@@ -65,6 +65,9 @@ bot.on("text", async (ctx) => {
   
   bot.launch();
 
+  app.get('/',(req,res)=>{
+  res.redirect('https://t.me/openai_imagebot');
+  });
   app.listen(PORT,()=>{
     console.log(`app runnning on port : ${PORT}`);
   })
